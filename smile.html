@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    .emoji {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/smile-160-1.png');
+    }
+    .emoji2 {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/smile-160-1.png');
+    }
+    .emoji3 {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/smile-160-1.png');
+      animation: spin 3s alternate infinite;
+    }
+    .emoji4 {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/smile-160-1.png');
+    }
+    .emoji5 {
+      width: 160px;
+      height: 160px;
+      display: inline-block;
+      position: relative;
+      background: url('images/smile-160-1.png');
+      animation: spin5 4s linear infinite;
+    }
+    .emoji5:hover, .emoji5:hover .emoji-e5, .emoji5:hover .emoji-m5 {
+      animation-play-state: paused;
+    }
+    .emoji-e {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-1.png');
+      background-position: -160px top;
+      animation: eyes 2s steps(1) infinite;
+    }
+    .emoji-e2 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-2.png');
+      background-position: -160px top;
+      animation: eyes .5s steps(1) infinite;
+    }
+    .emoji-e3 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-3.png');
+      background-position: -160px top;
+      animation: eyes 1s steps(1) infinite;
+      animation-play-state: running;
+    }
+    .emoji-e3:hover {
+      animation-play-state: paused;
+    }
+    .emoji-e4 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-4.png');
+      background-position: -160px top;
+      animation: eyes 1s steps(1) infinite;
+    }
+    .emoji-e5 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-5.png');
+      background-position: -160px top;
+      animation: eyes 2s steps(1) infinite;
+    }
+    .emoji-m {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-1.png');
+      background-position: -640px top;
+      animation: mouth 2s steps(1) infinite;
+    }
+    .emoji-m2 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-2.png');
+      background-position: -640px top;
+      animation: mouth .5s steps(1) infinite;
+    }
+    .emoji-m3 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-3.png');
+      background-position: -640px top;
+      animation: mouth 1s steps(1) infinite;
+      animation-play-state: running;
+    }
+    .emoji-m3:hover {
+      animation-play-state: paused;
+    }
+    .emoji-m4 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-4.png');
+      background-position: -640px top;
+      animation: mouth 1s steps(1) infinite;
+    }
+    .emoji-m5 {
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url('images/smile-160-5.png');
+      background-position: -640px top;
+      animation: mouth 2s steps(1) infinite;
+    }
+    @keyframes eyes {
+      0% {background-position: -160px top;}
+      33% {background-position: -320px top;}
+      66% {background-position: -480px top;}
+    }
+    @keyframes mouth {
+      0% {background-position: -640px top;}
+      33% {background-position: -800px top;}
+      66% {background-position: -960px top;}
+    }
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      50% {transform: rotate(-360deg);}
+      100% {transform: rotate(360deg);}
+    }
+    @keyframes spin5 {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+    </style>
+  </head>
+  <body>
+    <div class="emoji one">
+      <div class="emoji-e"></div>
+      <div class="emoji-m"></div>
+    </div>
+    <div class="emoji2">
+      <div class="emoji-e2"></div>
+      <div class="emoji-m2"></div>
+    </div>
+    <div class="emoji3">
+      <div class="emoji-e3"></div>
+      <div class="emoji-m3"></div>
+    </div>
+    <div class="emoji4">
+      <div class="emoji-e4"></div>
+      <div class="emoji-m4"></div>
+    </div>
+    <div class="emoji5">
+      <div class="emoji-e5"></div>
+      <div class="emoji-m5"></div>
+    </div>
+  </body>
+</html>
